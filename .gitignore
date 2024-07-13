@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 .env.local
+ENV.tsxs
 
 # testing
 /coverage
