@@ -32,6 +32,7 @@ const Sul = styled.ul`
     justify-content: center;
     gap: 50px;
     list-style: none;
+    padding: 0;
 ` 
 
 const Sa = styled.a`
@@ -39,6 +40,9 @@ const Sa = styled.a`
     text-decoration: none;
     &:hover {
         opacity: 0.8;
+    }
+    @media screen and (max-width: 640px){
+        font-size: 0.8rem;
     }
 `
 

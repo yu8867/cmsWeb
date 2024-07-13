@@ -1,16 +1,14 @@
 import styled from "styled-components";
 
 import { PageFooter } from "../components/footer/PageFooter";
-import { PageHeader } from "../components/header/PageHeader";
 
 
-export const Layout = (props:any) => {
+export const NoPageLayout = (props:any) => {
     const { children } = props;
 
     return (
         <>
-            <PageHeader />
-                {children}
+            {children}
             <PageFooter />
         </>
     );

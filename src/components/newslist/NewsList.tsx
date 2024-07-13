@@ -11,7 +11,7 @@ export default function NewsList(props: {news: News[]}) {
     
     return (
         <>
-        <ul>
+        <SUl>
           {news.map((content) => (
             <SNewsList key={content.id} >
               <SNewsItem>
@@ -26,10 +26,16 @@ export default function NewsList(props: {news: News[]}) {
               </SNewsItem>
             </SNewsList>
           ))}
-        </ul>
+        </SUl>
         </>
     )
 }
+
+const SUl = styled.ul`
+  @media screen and (max-width: 640px){
+    padding: 0 1.2rem 0 1.2rem;
+  }
+`
 
 const SNewsList = styled.li`
   border-bottom: 2px solid #f3f3f3;
@@ -50,6 +56,9 @@ const SNewsImg = styled.img`
   height: auto;
   border-radius: 10px;
   border: 1px solid rgba(60, 60, 60, 0.4);
+  @media screen and (max-width: 640px){
+    display: none;
+  }
 `
 
 const SNewsItemTitle = styled.dt`
