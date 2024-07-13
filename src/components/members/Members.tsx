@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from 'react';
 import styled from "styled-components";
 
 import { Hero } from "../layout/Hero";
 import { Content } from "../layout/Content";
-import { Member, getMembersList } from "../../libs/MicroCMS";
-import { MICROCMS_SERVICE_DOMAIN } from "../../ENV";
+import { getMembersList } from "../../libs/MicroCMS";
 
 const data = {
     contents : [
